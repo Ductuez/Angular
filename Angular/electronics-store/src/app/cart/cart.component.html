@@ -1,0 +1,81 @@
+<div class="center contact-info">
+  <div class="contact-title">GIỎ HÀNG CỦA BẠN</div>
+  <div class="table" style="width: 100%; margin-top: 20px; float: left;">
+    <div *ngFor="let item of myArr">
+      <app-cartitem [item]='item'></app-cartitem>
+    </div>
+  </div>
+  <div _ngcontent-c5="" class="total-info" style="width: calc(100% - 20px); display: table; padding: 10px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;">
+      <span _ngcontent-c5="" style="width: calc(100% - 100px); color: #999; font-weight: 400; text-transform: uppercase; text-align: right; font-size: .86em; float: left;">Tổng tiền (VND)</span>
+      <span _ngcontent-c5="" style="width: 100px; font-weight: 700; text-align: right; font-size: .86em; float: left;">{{totalPrice}}&nbsp;₫</span>
+  </div>
+</div>
+<form>
+ <div class="center contact-info">
+  <div class="contact-title">THÔNG TIN GIAO HÀNG</div>
+  <div class="input-group-content">
+    <label for="basic-url">Tên gọi</label>
+    <div class="input-group mb-3">
+     <div class="input-group-prepend">
+      <span class="input-group-text span-input" id="basic-addon3"><i class="fas fa-user i-input"></i></span>
+     </div>
+     <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+    </div>
+  </div>
+  <div class="input-group-content">
+   <label for="basic-url">Email</label>
+   <div class="input-group mb-3">
+    <div class="input-group-prepend">
+     <span class="input-group-text span-input" id="basic-addon3"><i class="fas fa-envelope i-input"></i></span>
+    </div>
+    <input type="email" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+   </div>
+  </div>
+  <div class="input-group-content">
+   <label for="basic-url">Điện thoại</label>
+   <div class="input-group mb-3">
+    <div class="input-group-prepend">
+     <span class="input-group-text span-input" id="basic-addon3"><i class="fas fa-mobile i-input"></i></span>
+    </div>
+    <input type="tel" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+   </div>
+  </div>
+  <div class="input-group-content">
+   <label for="basic-url">Mã khuyến mãi</label>
+   <div class="input-group mb-3">
+    <div class="input-group-prepend">
+     <span class="input-group-text span-input" id="basic-addon3"><i class="fas fa-percentage i-input"></i></span>
+    </div>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+   </div>
+  </div>
+  <div class="input-group-content">
+   <label for="basic-url">Địa chỉ</label>
+   <div class="input-group mb-3">
+    <div class="input-group-prepend">
+     <span class="input-group-text span-input" id="basic-addon3"><i class="fas fa-home i-input"></i></span>
+    </div>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+   </div>
+  </div>
+  <div class="input-group-content">
+   <label for="basic-url">Các lưu ý</label>
+   <div class="input-group">
+     <div class="input-group-prepend">
+      <span class="input-group-text span-input"><i class="fas fa-exclamation-circle i-input"></i></span>
+     </div>
+     <textarea class="form-control" aria-label="With textarea"></textarea>
+    </div>
+    <br>
+   </div>
+   <div class="content-center">
+     <button type="button" class="btn btn-primary btn-color">Đặt hàng</button>
+    </div>
+    <br>
+    <div class="contact-extra" style="width: 100%;
+    color: #999;
+    font-size: .86em;
+    font-style: italic;
+    float: left;">Không tiện trong việc đặt hàng online? Hãy gọi đặt hàng trực tiếp 028.36205514 hoặc 0942.111912</div>
+  </div>
+</form>
